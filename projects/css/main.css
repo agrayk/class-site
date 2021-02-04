@@ -1,0 +1,53 @@
+p {
+  color:rgba(255, 0, 0, 0.5);
+  background-color: #add8e6;
+  font-size: 40px;
+  /* border: 10px dashed black; */
+  border-radius: 25px;
+    /* the values go clockwise so top,right,bottom,left */
+    /* padding is interior the element */
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  /* height: 50px;
+  overflow-y: scroll; */
+  transition: background-color 1s ease;
+}
+
+p:hover {
+  background-color: lightgray;
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color:lightgreen;
+}
+
+a:hover{
+  color:red;
+}
+
+ul {
+  list-style: upper-roman;
+  padding-left: 40px;
+}
+
+
+
+/* class can make a generla style adn cna be applied anywhere */
+.new {
+  text-align: center;
+  font-family: serif;
+  color: rgb(0,50,150);
+  font-style: italic;
+  line-height: 200%
+}
+
+.large-text {
+  font-size: 90px;
+}
