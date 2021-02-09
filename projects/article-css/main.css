@@ -1,7 +1,25 @@
-.section {
+p {
   background-color: #F5F5DC;
+  border-radius: 25px;
+  padding: 20px;
 }
 
 mark {
   background-color: #F5F5DC;
+}
+
+ul {
+  padding: 40px;
+}
+
+mark:hover {
+  background-color: #edee82
+}
+
+a {
+  color: lightblue;
+}
+
+a:hover {
+  color: #lightgray;
 }
