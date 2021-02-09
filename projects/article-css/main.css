@@ -1,4 +1,5 @@
-
+/* EDITS FOR THE HTML TYPES */
+/* ------------------------------------ */
 body {
   background-color: #F5F5DC;
 }
@@ -14,16 +15,19 @@ p {
   line-height: 200%
 }
 
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-family: verdana, sans-serif;
+  line-height: 200%
+}
+
 mark {
-  background-color: #F5F5DC;
+  background-color: #a4cc95;
 }
 
 a {
   color: green;
-}
-
-img {
-  align-self: center;
 }
 
 ol {
@@ -36,6 +40,31 @@ ol {
   list-style-position: inside;
   font-family: verdana, sans-serif;
   line-height: 200%
+}
+
+
+/* EDITS FOR THE CLASSES */
+/* -------------------------------------------------------- */
+.banner {
+  background-image:"images/breaker.png";
+    background-repeat:repeat-x;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 300px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .p1 {
