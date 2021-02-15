@@ -1,0 +1,27 @@
+/* locally sourced font all i need to do is to source it here in font-face */
+@font-face {
+    font-family: 'aqum_twoclassic';
+    src: url('aqum_2_classic-webfont.woff2') format('woff2'),
+         url('aqum_2_classic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  margin:0;
+  background: gold;
+/* from google fonts */
+  font-family: 'Architects Daughter', cursive;
+  /* filter: invert(); */
+  color: white;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
