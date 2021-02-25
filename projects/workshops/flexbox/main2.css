@@ -1,0 +1,56 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+}
+
+.sky {
+  background-color: rgb(25, 18, 99);
+  height:100vh;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.moon {
+  background-color: rgb(240, 234, 211);
+  height:20%;
+  width: 15%;
+  border-radius:80%;
+  padding: 10%;
+  top:15px;
+  left:30px;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.crater {
+  background-color: white;
+  height:35%;
+  width:18%;
+  border-radius:60%;
+  padding:5%;
+  top:30px;
+  left:10px;
+  z-index:2;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.hill-one {
+  background-color: rgb(81, 152, 29);
+  height:120%;
+  width:40%;
+  border-top:50%;
+  z-index: 5;
+  display:flex;
+  align-self: flex-end;
+  position: relative;
+
+}

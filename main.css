@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #F5F5DC;
   background-image: url("car.gif");
@@ -15,9 +19,9 @@ color:rgb(194, 209, 143);
   margin: 5px;
 }
 
-p {
-  text-align: center;
-  position: static;
+div {
+  /* text-align: center;
+  position: static; */
   font-family: 'Architects Daughter', sans-serif;
   font-size: 20px;
   color: white;
@@ -44,21 +48,51 @@ a:hover {
 }
 
 /* CLASS */
-
-.banner {
-  height:60px;
-  width:600px;
-  background: rgb(194, 209, 143);
-  position: fixed;
-  border-radius: 25px;
-  top:80%;
-  left:50%;
-  z-index:2;
-  transform:translate(-50%, -50%);
+.main-container {
+/* vh=viewport height is a relative height */
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
 }
 
-.first{
-  left: 70px;
+.banner {
+  background: rgb(194, 209, 143);
+  width:95%;
+  height: 9%
+  z-index: 9999;
+  top: 80%;
+  left: 50%;
+  padding: .2rem;
+  position: fixed;
+  border-radius: 25px;
+  z-index:2;
+  transform:translate(-50%, -50%);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.banner-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.5s ease;
+  width:100%;
+}
+.banner-items {
+  /* background-color:rgb(151, 163, 110); */
+  width:20%;
+  align-items:center;
+  text-align: center;
+}
+
+
+
+/* .first{
+  height:50%;
+  width:50%;
   position: fixed;
   z-index:5;
 }
@@ -79,4 +113,4 @@ a:hover {
   left: 450px;
   position: fixed;
   z-index:5;
-}
+} */
