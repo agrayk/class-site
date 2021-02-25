@@ -1,0 +1,28 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  background-color: rgb(69, 40, 106);
+  font-size: 22px;
+}
+
+.special {
+  color: rgb(128, 91, 233);
+  font-style: italic;
+}
+
+.secret {
+  position:absolute;
+  width:400px;
+  top:100px;
+  left:300px;
+  display:none;
+}
+
+/* when we hover over span:special we applying it to secret class */
+.special:hover .secret{
+  display:block;
+
+}
