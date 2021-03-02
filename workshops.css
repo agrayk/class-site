@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #411177;
+  z-index: -1;
+}
+
+h1 {
+  color:rgb(126, 58, 203);
+  font-family: 'Architects Daughter', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  line-height: 200%;
+  margin: 5px;
+}
+
+div {
+  /* text-align: center;
+  position: static; */
+  font-family: 'Architects Daughter', sans-serif;
+  font-size: 20px;
+  color: white;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+
+a:hover {
+  color: rgb(136, 30, 219);
+}
+
+/* CLASS */
+.main-container {
+/* vh=viewport height is a relative height */
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.banner {
+  background: rgb(126, 58, 203);
+  width:95%;
+  height: 9%
+  z-index: 9999;
+  top: 80%;
+  left: 50%;
+  padding: .2rem;
+  position: fixed;
+  border-radius: 25px;
+  z-index:2;
+  transform:translate(-50%, -50%);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.banner-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.5s ease;
+  width:100%;
+}
+.banner-items {
+  /* background-color:rgb(151, 163, 110); */
+  width:20%;
+  align-items:center;
+  text-align: center;
+}
+
+
+
+/* .first{
+  height:50%;
+  width:50%;
+  position: fixed;
+  z-index:5;
+}
+
+.second {
+  left: 167px;
+  position: fixed;
+  z-index:5;
+}
+
+.third {
+  left: 300px;
+  position: fixed;
+  z-index:5;
+}
+
+.fourth {
+  left: 450px;
+  position: fixed;
+  z-index:5;
+} */
