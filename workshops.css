@@ -45,6 +45,18 @@ a:hover {
 }
 
 /* CLASS */
+.back {
+  text-align: center;
+  width:100px;
+  background: #e98e94;
+  position: fixed;
+  border-radius: 25px;
+  top: 3%;
+  left:7%;
+  z-index:2;
+  transform:translate(-50%, -50%);
+
+
 .main-container {
 /* vh=viewport height is a relative height */
   height:100vh;
