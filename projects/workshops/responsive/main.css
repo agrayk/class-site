@@ -1,0 +1,52 @@
+* {
+  box-sizing:border-box;
+}
+
+html {
+  font-size:10px;
+}
+
+body {
+  margin:1rem;
+}
+
+p {
+  /* width:50%; */
+  /* relative to parent container */
+  margin:0px;
+  font-size:1em;
+}
+
+/* ____________CLASS_____________ */
+.box {
+  background-color: rgb(174, 231, 174);
+  max-width:900px;
+  min-height:50vh;
+  font-size:20px;
+}
+
+.flex {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: rgb(190, 235, 63);
+  width:32%;
+  height:200px;
+  margin-bottom: 20px;
+}
+
+/* __mobile edits at end of css__ */
+@media screen and (max-width:800px){
+  .item {
+    width:49%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .item {
+    width:100%;
+  }
+}
