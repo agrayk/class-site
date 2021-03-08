@@ -28,12 +28,9 @@ div {
 
 }
 
-a {
-  color: white;
-}
-
 a:link {
   text-decoration: none;
+  color:white;
 }
 
 a:visited {
