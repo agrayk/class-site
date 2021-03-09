@@ -38,15 +38,14 @@ a:hover {
 .quote {
   display:flex;
   position: absolute;
-  bottom:30px;
+  top:70%;
   color:white;
-  margin:100px;
   font-size: 20px;
 }
 .link {
 display:flex;
 position: absolute;
-bottom:-15px;
+top:63%;
 color:rgb(42, 46, 47);
 margin:100px;
 font-size: 20px;
@@ -70,6 +69,7 @@ font-size: 20px;
  transform: rotate(45deg);
  z-index: 3;
  position: absolute;
+ align-items: center;
 }
 
 .right {
@@ -100,8 +100,8 @@ font-size: 20px;
 
 /* __________LID____________ */
 .lid {
-  width:24vw;
-  height:21vw;
+  width:25vw;
+  height:22vw;
   background-color: rgb(60, 67, 69);
   border-radius: 50%;
   display: flex;
@@ -109,12 +109,11 @@ font-size: 20px;
   position: absolute;
   align-items: center;
   animation:close 3.5s infinite alternate;
-
 }
 
 .corner2 {
- width:11vw;
- height:11vw;
+ width:12vw;
+ height:12vw;
  /* background-color: rgb(60, 67, 69); */
  transform: rotate(45deg);
  z-index: 5;
@@ -123,11 +122,11 @@ font-size: 20px;
 }
 
 .left2 {
-  left:60.6%;
+  left:58%;
 }
 
 .right2 {
-  right:60.6%;
+  right:58%;
 }
 
 
