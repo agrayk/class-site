@@ -90,17 +90,12 @@ font-size: 20px;
   left:24.3%;
   /* animation:shrink 3.5s infinite alternate;
   animation-delay: 3.5s; */
+  transition: 1s ease, border-radius .1s, background .5s ease;
 }
 
 .pupil:hover {
-  /* width:12vw;
-  height:12vw; */
-  background-color: rgb(237, 28, 28);
-  /* z-index: 3;
-  position: absolute;
-  border-radius: 50%;
-  left:24.3%; */
-  /* animation:grow 4.5s infinite alternate; */
+  background-color: rgb(141, 155, 224);
+  transform: scale(.5);
 }
 
 /* __________LID____________ */
