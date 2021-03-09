@@ -15,6 +15,7 @@ body {
   background-color: rgb(42, 46, 47);
 }
 
+/* __________EYE____________ */
 .eye {
   width:23vw;
   height:20vw;
@@ -22,6 +23,8 @@ body {
   border-radius: 50%;
   display: flex;
   position: absolute;
+  align-items: center;
+  animation:close 2s infinite linear;
 }
 
 .corner {
@@ -31,17 +34,19 @@ body {
  transform: rotate(45deg);
  z-index: 3;
  position: absolute;
-}
-
-.left {
-  left:36.9%;
+ animation:close 2s infinite linear;
 }
 
 .right {
-  right:36.9%;
+  left:63.7%;
 }
 
-.lid {
+.left {
+  right:63.7%;
+}
+
+/* __________LID____________ */
+/* .lid {
   width:24vw;
   height:21vw;
   background-color: rgb(60, 67, 69);
@@ -51,7 +56,6 @@ body {
   position: absolute;
   align-items: center;
   animation:close 3s infinite;
-  animation-timing-function: linear;
 }
 
 .corner2 {
@@ -69,14 +73,18 @@ body {
 
 .right2 {
   right:60.6%;
-}
+} */
 
+
+/* ____________ANIMATION_____________ */
 @keyframe close {
   0% {
-    opacity: 0;
+    transform: scale(1);
+    background-color: rgb(255, 254, 249);
   }
 
   100% {
-    opacity: 1;
+    transform: scale(1.5);
+    background-color: rgb(60, 67, 69);
   }
 }
