@@ -1,0 +1,47 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:20px;
+}
+
+.btn {
+  background-color: rgb(105, 113, 223);
+  cursor:pointer;
+  padding: 10px;
+  width:80px;
+}
+
+.btn::selection {
+  display:none;
+}
+
+
+.btn:hover {
+  background-color: rgb(166, 153, 227);
+}
+
+#box {
+  height:100%;
+  background-color: rgb(48, 251, 242);
+  position: fixed;
+  width:100%;
+  max-width: 400px;
+  top:0;
+  right:-400px;
+  coclor:white;
+  font-size: 25px;
+  padding:25px;
+  transition:transform .5s;
+}
+
+
+.active {
+  /* width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px; */
+  transform: translateX(-400px);
+}
