@@ -4,4 +4,26 @@
 
 body {
   margin:0;
+  background-color: #21123e;
+}
+
+.flex {
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.base{
+  width:100vw;
+  height:100%;
+}
+
+.door {
+  width:100px;
+  height:100px;
+  display:flex;
+  z-index: 3;
+  position: absolute;
 }
