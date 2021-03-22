@@ -14,14 +14,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-}
-.base{
-  display: flex;
-  width:100%;
-  height:100%;
-  z-index: -1;
   position: absolute;
-  align-self: center;
 }
 
 .door {
