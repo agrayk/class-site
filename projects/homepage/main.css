@@ -48,11 +48,34 @@ body {
 
 
 /* _________________TEXT______________________ */
-.click-d {
+.text-welcome {
+  width:100%;
+  height:29%;
+  display:flex;
+  z-index: 5;
+  position: fixed;
+  top:12%;
+  right:-50.3%;
+  animation:hello 1s;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+}
+
+.text-inquiry {
+  width:100%;
+  height:29%;
+  display:flex;
+  z-index: 5;
+  position: fixed;
+  top:6%;
+  right:-68%;
+}
+
+.special {
   width:100px;
   height:100px;
   display:flex;
-  z-index: 5;
+  z-index: 6;
   position: fixed;
   top:30%;
   left:21%;
@@ -61,7 +84,7 @@ body {
 .text-door {
   width:100%;
   height:29%;
-  display:flex;
+  /* display:flex; */
   z-index: 5;
   position: fixed;
   top:34%;
@@ -69,6 +92,32 @@ body {
   display:none;
 }
 
-.click-d:hover .text-door {
+.special:hover .text-door {
   display:block;
+}
+
+
+.text-mail{
+  width:100%;
+  height:29%;
+  /* display:flex; */
+  z-index: 5;
+  position: fixed;
+  top:33%;
+  right:-65%;
+  display: none;
+}
+
+
+.mail:hover .text-mail{
+  display: block;
+}
+
+@keyframes hello {
+  0% {
+    display:100%;
+  }
+  100% {
+    display:none;
+  }
 }
