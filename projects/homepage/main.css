@@ -71,7 +71,7 @@ body {
   right:-68%;
 }
 
-.adventure {
+.special {
   width:100px;
   height:100px;
   display:flex;
@@ -94,7 +94,7 @@ body {
   display:none;
 }
 
-.adventure:hover .text-door {
+.special:hover .text-door {
   display:block;
 }
 
@@ -114,7 +114,7 @@ body {
   width:100%;
   height:29%;
   /* display:flex; */
-  z-index: 5;
+  z-index: 8;
   position: fixed;
   top:33%;
   right:-65%;
