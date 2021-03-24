@@ -71,7 +71,7 @@ body {
   right:-68%;
 }
 
-.special {
+.adventure {
   width:100px;
   height:100px;
   display:flex;
@@ -94,7 +94,7 @@ body {
   display:none;
 }
 
-.special:hover .text-door {
+.adventure:hover .text-door {
   display:block;
 }
 
@@ -110,8 +110,18 @@ body {
   display: none;
 }
 
+.letter {
+  width:100%;
+  height:29%;
+  /* display:flex; */
+  z-index: 5;
+  position: fixed;
+  top:33%;
+  right:-65%;
+  display: none;
+}
 
-.mail:hover .text-mail{
+.letter:hover .text-mail{
   display: block;
 }
 
