@@ -51,14 +51,15 @@ body {
 .text-welcome {
   width:100%;
   height:29%;
-  display:flex;
+  /* display:flex; */
   z-index: 5;
   position: fixed;
   top:12%;
   right:-50.3%;
-  animation:hello 1s;
+  animation:hello;
+  animation-duration: 3s;
   animation-iteration-count: 1;
-  animation-delay: 5s;
+  animation-timing-function: ease-out;
 }
 
 .text-inquiry {
@@ -127,9 +128,9 @@ body {
 
 @keyframes hello {
   0% {
-    display:100%;
+    transform:scale(0);
   }
   100% {
-    display:none;
+    transform:scale(1);
   }
 }
