@@ -122,7 +122,7 @@ body {
   display: none;
 }
 
-.letter:hover .text-mail{
+.special:hover .text-mail{
   display: block;
 }
 
