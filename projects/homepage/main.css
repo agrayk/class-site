@@ -120,6 +120,6 @@ body {
   padding-left: 10px;
 }
 
-.special:hover .text-mail{
+.letter:hover .text-mail{
   display: block;
 }
