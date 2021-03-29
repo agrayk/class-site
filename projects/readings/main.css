@@ -4,4 +4,57 @@
 
 body {
   margin:0;
+  font-family: 'Syne Mono', monospace;
+}
+
+.main {
+  height:100vh;
+  width:100%;
+  display:flex;
+  background-color: rgb(48, 49, 54);
+  align-items:center;
+  justify-content: space-around;
+
+}
+
+.bubble {
+  width:40vw;
+  height:40vw;
+  background-color: rgb(236, 234, 222);
+  border-radius: 50%;
+  align-items: center;
+}
+
+.banner-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+}
+
+.bubble-items {
+  color: rgb(93, 93, 98);
+  width:20%;
+  align-items:center;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color:rgb(93, 93, 98);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(93, 93, 98);
+}
+
+a:active {
+  text-decoration: none;
+  color: rgb(93, 93, 98);
+}
+
+
+a:hover {
+  color: rgb(119, 161, 218);
 }

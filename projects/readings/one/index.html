@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>what is a website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="main">
+    <img src="hole.png" width="80%">
+    <div class="text">where does time go?</div>
+    <div class="text-two">somewhere we can't see?</div>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+  </div>
+  <script>
+      function showTime(){
+      var date = new Date();
+      var h = date.getHours(); // 0 - 23
+      var m = date.getMinutes(); // 0 - 59
+      var s = date.getSeconds(); // 0 - 59
+      var session = "AM";
+
+      if(h == 0){
+          h = 12;
+      }
+
+      if(h > 12){
+          h = h - 12;
+          session = "PM";
+      }
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+
+      var time = h + ":" + m + ":" + s + " " + session;
+      document.getElementById("MyClockDisplay").innerText = time;
+      document.getElementById("MyClockDisplay").textContent = time;
+
+      setTimeout(showTime, 1000);
+
+    }
+
+    showTime();
+  </script>
+  </body>
+</html>
