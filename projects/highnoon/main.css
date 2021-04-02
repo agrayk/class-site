@@ -1,0 +1,43 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+
+}
+
+.main {
+  background-color: rgb(134, 174, 235);
+  height:100vh;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.sky{
+  height:70%;
+  width:100%;
+  display:flex;
+}
+
+.hillone{
+  background-color: rgb(186, 158, 85);
+  height:400px;
+  width:400px;
+  top:32%;
+  left:2%;
+  transform: rotate(28deg);
+  position: fixed;
+}
+
+.ground {
+  background-color: rgb(231, 208, 113);
+  bottom:0px;
+  height:40%;
+  width:100%;
+  border-top:50%;
+  z-index: 4;
+  display:flex;
+  position: fixed;
+}
