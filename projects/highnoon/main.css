@@ -22,13 +22,27 @@ body {
 
 .sun{
   background-color: rgb(235, 219, 111);
-  height:10%;
-  width:5%;
+  height:150px;
+  width:150px;
   border-radius:80%;
-  padding: 10%;
-  top:15px;
-  right:30px;
+  /* padding: 10%; */
+  top:45px;
+  right:45px;
   position: fixed;
+  animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
+}
+
+.sun2{
+  background-color: rgb(235, 211, 110, 0.5);
+  height:150px;
+  width:150px;
+  border-radius:80%;
+  /* padding: 10%; */
+  top:50px;
+  right:45px;
+  z-index: -2;
+  position: fixed;
+
 }
 
 .hillone{
@@ -41,6 +55,15 @@ body {
   animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
 }
 
+.hillone2{
+  background-color: rgb(186, 158, 85, 0.5);
+  height:500px;
+  width:600px;
+  top:34%;
+  left:-5%;
+  position: fixed;
+}
+
 .hilltwo{
   background-color: rgb(186, 158, 85);
   height:300px;
@@ -50,6 +73,16 @@ body {
   z-index: 2;
   position: fixed;
   animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
+}
+
+.hilltwo2{
+  background-color: rgb(186, 158, 85, 0.5);
+  height:200px;
+  width:600px;
+  top:52%;
+  right:-5%;
+  z-index: 2;
+  position: fixed;
 }
 
 .ground {
@@ -67,5 +100,5 @@ body {
 
 @keyframes wobble {
     from, to { transform: translateY(0px) }
-    50% { transform: translateY(30px) }
+    50% { transform: translateY(15px) }
 }
