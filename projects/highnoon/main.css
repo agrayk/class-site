@@ -4,11 +4,10 @@
 
 body {
   margin:0;
-
+  background-color: rgb(134, 174, 235);
 }
 
 .main {
-  background-color: rgb(134, 174, 235);
   height:100vh;
   width: 100%;
   display:flex;
@@ -30,16 +29,25 @@ body {
   top:15px;
   right:30px;
   position: fixed;
-  animation-name: electricity; animation-iteration-count: infinite
 }
 
 .hillone{
   background-color: rgb(186, 158, 85);
   height:600px;
-  width:400px;
-  top:20%;
-  left:0;
-  transform: rotate(28deg);
+  width:700px;
+  top:30%;
+  left:-10%;
+  position: fixed;
+  animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
+}
+
+.hilltwo{
+  background-color: rgb(186, 158, 85);
+  height:300px;
+  width:700px;
+  top:50%;
+  right:-10%;
+  z-index: 2;
   position: fixed;
   animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
 }
@@ -47,7 +55,7 @@ body {
 .ground {
   background-color: rgb(231, 208, 113);
   bottom:0px;
-  height:40%;
+  height:30%;
   width:100%;
   border-top:50%;
   z-index: 4;
@@ -56,17 +64,6 @@ body {
   animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
 }
 
-
-@keyframes electricity {
-    from, 37%, 67%, 85%, 93% { transform: translateY(30px) }
-    4%, 64%, 88% { transform: translateY(10px) }
-    8%, 24%, 32%, 44% { transform: translateY(5px) }
-    12%, 52%, 60%, 20% { transform: translateY(10px) }
-    16%, 40% { transform: translateY(5px) }
-    28%, 56% { transform: translateY(10px) }
-    48%, 72%, 80%, 96% { transform: translateY(30px) }
-    76%, to { transform: translateY(40px) }
-}
 
 @keyframes wobble {
     from, to { transform: translateY(0px) }
