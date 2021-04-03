@@ -4,7 +4,7 @@
 
 body {
   margin:0;
-  background-color: rgb(134, 174, 235);
+  background-image: linear-gradient(to bottom left,rgb(134, 174, 235),rgb(78, 137, 228) );
 }
 
 .main {
@@ -42,26 +42,52 @@ body {
   right:45px;
   z-index: -2;
   position: fixed;
+}
 
+.sun3{
+  background-color: rgb(235, 211, 110, 0.7);
+  height:130px;
+  width:130px;
+  border-radius:80%;
+  /* padding: 10%; */
+  top:64px;
+  right:56px;
+  z-index: -2;
+  position: fixed;
 }
 
 .hillone{
   background-color: rgb(186, 158, 85);
-  height:600px;
-  width:700px;
+  /* background-image: linear-gradient(to bottom left,rgb(186, 158, 85), rgb(148, 114, 27)); */
+  height:800px;
+  width:900px;
   top:30%;
   left:-10%;
+  border-radius:40% 80% 40% 30%;
   position: fixed;
   animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
 }
 
 .hillone2{
   background-color: rgb(186, 158, 85, 0.5);
-  height:500px;
-  width:600px;
-  top:34%;
+  height:700px;
+  width:800px;
+  top:38%;
   left:-5%;
+  border-radius:40% 80% 40% 30%;
   position: fixed;
+  z-index: -3;
+}
+
+.hillone3{
+  background-color: rgb(186, 158, 85, 0.7);
+  height:700px;
+  width:800px;
+  top:40%;
+  left:-8%;
+  border-radius:40% 80% 40% 30%;
+  position: fixed;
+  z-index: -3;
 }
 
 .hilltwo{
@@ -71,6 +97,7 @@ body {
   top:50%;
   right:-10%;
   z-index: 2;
+  border-radius: 80% 40% 80% 50%;
   position: fixed;
   animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
 }
@@ -79,9 +106,21 @@ body {
   background-color: rgb(186, 158, 85, 0.5);
   height:200px;
   width:600px;
-  top:52%;
-  right:-5%;
+  top:53%;
+  right:-7%;
   z-index: 2;
+  border-radius: 80% 40% 80% 50%;
+  position: fixed;
+}
+
+.hilltwo3{
+  background-color: rgb(186, 158, 85, 0.7);
+  height:200px;
+  width:600px;
+  top:55%;
+  right:-8%;
+  z-index: -2;
+  border-radius: 80% 40% 80% 50%;
   position: fixed;
 }
 
@@ -97,8 +136,100 @@ body {
   animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
 }
 
+.road{
+  /* background-color: rgb(70, 60, 47);
+  height:206px;
+  width:150px;
+  left:50%;
+  position: fixed; */
+  width: 150px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(70, 60, 47);
+  left: 49.7%;
+  top: 20px;
+  transform: scale(1.4);
+  position: absolute;
+  z-index: 3;
+}
+
+.trapezoid {
+width: 200px;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid rgb(70, 60, 47);
+left: 48%;
+bottom: 0;
+transform: scale(1.5);
+position: absolute;
+z-index: 3;
+}
+
+.road2{
+  /* background-color: rgb(70, 60, 47);
+  height:206px;
+  width:150px;
+  left:50%;
+  position: fixed; */
+  width: 170px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(70, 60, 47, 0.5);
+  left: 49%;
+  /* top: 20px; */
+  transform: scale(1.);
+  position: absolute;
+  z-index: 5;
+}
+
+.trapezoid2 {
+width: 260px;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid rgb(70, 60, 47, 0.5);
+left: 46%;
+bottom: -20px;
+transform: scale(1.);
+position: absolute;
+z-index: 5;
+}
+
+.road3{
+  /* background-color: rgb(70, 60, 47);
+  height:206px;
+  width:150px;
+  left:50%;
+  position: fixed; */
+  width: 155px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(70, 60, 47, 0.7);
+  left: 49.5%;
+  /* top: 20px; */
+  transform: scale(1.);
+  position: absolute;
+  z-index: 5;
+}
+
+.trapezoid3 {
+  width: 245px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(70, 60, 47, 0.7);
+  left: 46.5%;
+  bottom: -20px;
+  transform: scale(1.);
+  position: absolute;
+  z-index: 5;
+}
 
 @keyframes wobble {
     from, to { transform: translateY(0px) }
-    50% { transform: translateY(15px) }
+    50% { transform: translateY(10px) }
 }
