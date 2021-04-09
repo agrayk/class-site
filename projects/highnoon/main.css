@@ -1,10 +1,35 @@
 * {
   box-sizing:border-box;
+  font-family: 'Durango Western Eroded';
 }
 
 body {
   margin:0;
   background-image: linear-gradient(to bottom left,rgb(134, 174, 235),rgb(78, 137, 228) );
+}
+
+.button {
+  background-color: rgb(235, 219, 111, 0.2); /* Green */
+  border: none;
+  color: rgb(255, 242, 147);
+  padding: 5px 22px;
+  border-radius: 45%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  position: absolute;
+  top:70px;
+  right:43px;
+  animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite;
+  z-index: 7;
+}
+
+.button:active {
+  border:none;
+}
+.button::selection{
+  border: none;
 }
 
 .main {
@@ -124,6 +149,44 @@ body {
   position: fixed;
 }
 
+.cowboy{
+  width:100px;
+  height:auto;
+  z-index: 7;
+  position: fixed;
+  left: 34%;
+  top:10%;
+  animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
+}
+.cowboy2{
+  width:100px;
+  height:auto;
+  z-index: 7;
+  position: fixed;
+  left: 35%;
+  top:12%;
+  opacity: 0.8;
+  animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
+}
+
+.cowboy3{
+  width:100px;
+  height:auto;
+  z-index: 6;
+  position: fixed;
+  left: 37%;
+  top:15%;
+  opacity: 0.8;
+  animation: wobble 1.5s ease-in-out; animation-iteration-count: infinite
+}
+
+.shoot{
+  z-index: 8;
+  right:0%;
+  top:30%;
+  position: fixed;
+}
+
 .ground {
   background-color: rgb(231, 208, 113);
   bottom:0px;
@@ -233,3 +296,9 @@ z-index: 5;
     from, to { transform: translateY(0px) }
     50% { transform: translateY(10px) }
 }
+@font-face {
+    font-family: 'Durango Western Eroded';
+    src: url('fonts/Durango Western.otf') format('opentype'),
+         /* url('aqum_2_classic-webfont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
